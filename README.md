@@ -10,3 +10,6 @@
 
 寫成一個work檔或ppt檔，不限字數，檔名: 簡報技巧-username.doc
 在今天下班前繳交上傳至個人的gitlab上
+
+##作業(二)
+網址更新 : http://www.freebsd.org/doc/zh_TW/books/handbook/basics-processes.html
