@@ -16,7 +16,7 @@
 
 
 ##學習
-IOC 控制反轉 & DI 依賴注入
-http://blog.developer.idv.tw/2014/05/ioc-di.html
-深入理解IoC(控制反转)和DI(依赖注入)
-http://www.importnew.com/13619.html
+IOC 控制反轉 & DI 依賴注入  
+http://blog.developer.idv.tw/2014/05/ioc-di.html  
+深入理解IoC(控制反转)和DI(依赖注入)  
+http://www.importnew.com/13619.html  
