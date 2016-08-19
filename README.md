@@ -19,4 +19,33 @@
 IOC 控制反轉 & DI 依賴注入  
 http://blog.developer.idv.tw/2014/05/ioc-di.html  
 深入理解IoC(控制反转)和DI(依赖注入)  
-http://www.importnew.com/13619.html  
+http://www.importnew.com/13619.html 
+
+##實作一
+    $url = "http://tt181.me/test0975313025.php"; 
+    $ch = curl_init(); 
+    curl_setopt($ch, CURLOPT_URL, $url); 
+    curl_setopt($ch, CURLOPT_POST, true); 
+ 
+    $postfiled = http_build_query(array("id"=>"10","name"=>"test")); 
+    //or  
+    $postfiled = array("id"=>"10","name"=>"test"); 
+ 
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $postfiled);  
+    curl_setopt($ch, CURLOPT_HTTPHEADER , array( 
+	    "token:rd1" 
+    )); 
+
+    $result = curl_exec($ch);  
+    curl_close($ch); 
+  
+    echo $result; 
+
+    output  
+    {"md5":"688caa7036f89ae493d50b30d0069433","id":"10","name":"test","time":"01:23:44"}
+    
+##實作二
+    php xxxx.php & 
+
+    因為PHP是弱型別語言，所以更需要強壯的寫法，而JAVA是強型別語言 
+    (其它詳說明) 
